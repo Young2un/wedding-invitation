@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
+import classNames from "classnames/bind";
+import styles from "./layout.module.scss";
+
+const cn = classNames.bind(styles);
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -25,8 +30,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${cn(
+          "layout"
+        )}`}
+      >
+        <div className={cn("container")}>{children}</div>
       </body>
     </html>
   );

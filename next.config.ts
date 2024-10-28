@@ -2,16 +2,16 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        port: "",
-        pathname: "**",
-        hostname: "",
-      },
-    ],
-  },
+  // images: {
+  //   remotePatterns: [
+  //     {
+  //       protocol: "https",
+  //       port: "",
+  //       pathname: "**",
+  //       hostname: "",
+  //     },
+  //   ],
+  // },
   webpack: (config) => {
     config.module.rules.push({
       test: /.svg$/i,
@@ -23,7 +23,7 @@ const nextConfig: NextConfig = {
   },
   sassOptions: {
     includePaths: ["styles"],
-    additionalData: `@import "src/styles/_globals.scss";`,
+    additionalData: `@use "src/styles/_globals.scss";`,
   },
 };
 

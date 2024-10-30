@@ -1,9 +1,5 @@
-import styles from "./page.module.css";
+import Main from "./_components/Main";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      안녕?
-    </div>
-  );
+  return <Main />;
 }

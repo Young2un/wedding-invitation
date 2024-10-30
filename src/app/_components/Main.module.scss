@@ -1,0 +1,29 @@
+.container {
+  background-color: #fcfcfc;
+
+  height: 100vh;
+}
+.mainContainer {
+  padding-top: 200px;
+
+  position: relative;
+}
+
+.weddingText {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  top: 80px;
+  transform: translateX(-50%);
+}
+
+.imgWrap {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.mainImg {
+  object-fit: cover;
+}

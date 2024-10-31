@@ -4,24 +4,29 @@
   height: 100vh;
 }
 .mainContainer {
-  padding-top: 200px;
+  padding-top: 120px;
 
   position: relative;
 }
 
 .weddingText {
-  position: absolute;
-  z-index: 100;
-  left: 50%;
-  top: 80px;
-  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  text-align: center;
 }
 
 .imgWrap {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.border {
+  border: 4px solid rgb(43, 43, 43);
+  padding: 6px 6px 4px;
 }
 
 .mainImg {

@@ -7,7 +7,8 @@ export default function Main() {
     <div className={style.container}>
       <div className={style.mainContainer}>
         <div className={style.weddingText}>
-          <Image src={WeddingText} alt="Wedding Text" />
+          {/* <Image src={WeddingText} alt="Wedding Text" /> */}
+          <WeddingText />
         </div>
         <div className={style.name}>
           <svg
